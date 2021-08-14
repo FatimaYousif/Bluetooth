@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     TextView paired;
-    Button turnOn, turnOff, discover, pairedDevices;
+    Button turnOn, turnOff, discoverable, pairedDevices;
     BluetoothAdapter bluetoothAdapter;
 
     @Override
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         paired=(TextView)findViewById(R.id.paired);
         turnOn=(Button) findViewById(R.id.turn_on);
         turnOff=(Button)findViewById(R.id.turn_off);
-        discover=(Button)findViewById(R.id.discover);
+        discoverable=(Button)findViewById(R.id.discoverable);
         pairedDevices=(Button)findViewById(R.id.paired_devices);
 
         bluetoothAdapter=BluetoothAdapter.getDefaultAdapter();
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //discover BTN
-        discover.setOnClickListener(new View.OnClickListener() {
+        discoverable.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(! bluetoothAdapter.isDiscovering())

@@ -30,11 +30,11 @@
             android:text="turn off" />
 
         <Button
-            android:id="@+id/discover"
+            android:id="@+id/discoverable"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="discover devices" />
+            android:text="discoverable" />
 
         <Button
             android:id="@+id/paired_devices"
